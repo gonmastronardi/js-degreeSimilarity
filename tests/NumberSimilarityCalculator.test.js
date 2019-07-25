@@ -12,7 +12,7 @@ describe('numberSimilarity - it returns a similarity value (0 to 1) between 2 nu
     });
     it('should compare 10 and 10 and return 1', async () => {
         let result = await numberSimilarity.getSimilarity('96','100');
-        expect(result).toBeGreaterThan(0.9);//second digit indicates precision
+        expect(result).toBeGreaterThan(0.9);
     });
     it('should compare 10 and 100 and return 0', async () => {
         let result = await numberSimilarity.getSimilarity('10','100');
@@ -35,4 +35,3 @@ describe('numberSimilarity - it returns a similarity value (0 to 1) between 2 nu
         expect(result).toBeCloseTo(0);
     });
 });
-

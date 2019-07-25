@@ -5,7 +5,7 @@
       "titulo": "motorola moto G6 azul",
       "marca": "Motorola",
       "modelo": "",
-      "precio": "$ 14.899,00",
+      "precio": "$ 14.999,00",
       "sistemaOperativo": "android",
       "versionSO": "8.0",
       "memoriaRam": "3 GB",
@@ -26,36 +26,36 @@
       "gps": "Sí",
       "cargaRapida": ""
     },
-    0.9977776296197524
+    1
   ],
   [
     {
-      "link": "http://www.musimundo.com/producto~129680~C173966-E135702CELULAR-LIBRE-MOTOROLA--G6-XT1925?gclid=EAIaIQobChMIqrOs3Oya3wIViFYNCh1TswwmEAQYAiABEgIQwPD_BwE",
-      "titulo": "MOTOROLA G6 XT1925",
+      "link": "https://www.garbarino.com/producto/celular-libre-motorola-moto-g6-azul/f446d9d2e6",
+      "titulo": "motorola moto G6 azul",
       "marca": "Motorola",
-      "modelo": "G6 XT1925",
+      "modelo": "",
       "precio": "$ 14.999,00",
-      "sistemaOperativo": "ANDROID 8.0 OREO",
-      "versionSO": "",
-      "memoriaRam": "",
-      "memoriaInterna": "",
-      "memoriaExpansible": "MICRO SD HASTA 128 GB",
-      "dimensiones": "",
-      "peso": "",
+      "sistemaOperativo": "android",
+      "versionSO": "8.0",
+      "memoriaRam": "3 GB",
+      "memoriaInterna": "32 GB",
+      "memoriaExpansible": "Si",
+      "dimensiones": "15.64 x 7.75 x 0.79 cm",
+      "peso": "167 g",
       "tamanoPantalla": "5.7 \"",
-      "resolucionPantalla": "",
-      "procesador": "OCTA CORE 1.8 GHZ",
-      "velocidadProcesador": "",
-      "camaraPrincipal": "",
-      "camaraFrontal": "8 MP",
-      "bateria": "",
-      "wiFi": "SI",
-      "usb": "SI",
-      "bluetooth": "4.2",
-      "gps": "ASISTIDO",
+      "resolucionPantalla": "1080 x 2160",
+      "procesador": "octaCore",
+      "velocidadProcesador": "1800 MHz",
+      "camaraPrincipal": "13 MP",
+      "camaraFrontal": "8 Mpx",
+      "bateria": "3000 mAh",
+      "wiFi": "Sí Wi-Fi 802.11 b/ g/ n",
+      "usb": "Sí",
+      "bluetooth": "Sí",
+      "gps": "Sí",
       "cargaRapida": ""
     },
-    0.6875
+    1
   ],
   [
     {
@@ -143,5 +143,34 @@
       "cargaRapida": ""
     },
     0.787878787878788
+  ],
+  [
+    {
+      "link": "http://www.musimundo.com/producto~129680~C173966-E135702CELULAR-LIBRE-MOTOROLA--G6-XT1925?gclid=EAIaIQobChMIqrOs3Oya3wIViFYNCh1TswwmEAQYAiABEgIQwPD_BwE",
+      "titulo": "MOTOROLA G6 XT1925",
+      "marca": "Motorola",
+      "modelo": "G6 XT1925",
+      "precio": "$ 14.999,00",
+      "sistemaOperativo": "ANDROID 8.0 OREO",
+      "versionSO": "",
+      "memoriaRam": "",
+      "memoriaInterna": "",
+      "memoriaExpansible": "MICRO SD HASTA 128 GB",
+      "dimensiones": "",
+      "peso": "",
+      "tamanoPantalla": "5.7 \"",
+      "resolucionPantalla": "",
+      "procesador": "OCTA CORE 1.8 GHZ",
+      "velocidadProcesador": "",
+      "camaraPrincipal": "",
+      "camaraFrontal": "8 MP",
+      "bateria": "",
+      "wiFi": "SI",
+      "usb": "SI",
+      "bluetooth": "4.2",
+      "gps": "ASISTIDO",
+      "cargaRapida": ""
+    },
+    0.6875
   ]
 ]

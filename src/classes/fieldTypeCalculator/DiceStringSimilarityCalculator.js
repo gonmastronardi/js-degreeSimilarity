@@ -6,6 +6,9 @@ module.exports = class DiceStringSimilarityCalculator extends SimpleObjectSimila
     super();
   }
 
+  /**it receives 2 strings and returns a similarity value between 0 and 1
+   * helped by an external library that uses Dice's coefficient.
+   */
   async getSimilarity(aString, anotherString) {
     if (!(aString || anotherString)) return 0;
     return stringSimilarity.compareTwoStrings(aString, anotherString);
