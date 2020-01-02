@@ -6,12 +6,18 @@ module.exports = class AverageSimilarityCalculator extends ComposedObjectSimilar
   }
 
   integrate(aMap) {
-    let total = 0;
-    let lenghtMap = 0;
+    let sumFields = 0;
+    let totalFields = 0;
     for (var key in aMap) {
-      total += aMap[key];
-      lenghtMap++;
+      if (aMap[key] != null){
+        sumFields += aMap[key];
+        totalFields++;
+      }
     }
-    return total / lenghtMap;
+    console.log('Total: '+sumFields)
+    console.log('Number of fields: ' + totalFields)
+    console.log('Result: '+ (sumFields/totalFields))
+    console.log('-')
+    return sumFields / totalFields;
   }
 };

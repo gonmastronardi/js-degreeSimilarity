@@ -11,25 +11,25 @@ const AverageSimilarityCalculator = require("./src/classes/similarityCalculatorM
 const FieldTypeCalculatorFactory = require("./src/classes/fieldTypeCalculator/FieldTypeCalculatorFactory");
 
 var configuration = {
-  titulo: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
-  precio: FieldTypeCalculatorFactory.numberSimilarityCalculator,
-  marca: FieldTypeCalculatorFactory.diceStringSimilarityCalculator
+  name: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
+  processor: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
+  // memory: FieldTypeCalculatorFactory.simpleNumberSimilarityCalculator,
+  camera: FieldTypeCalculatorFactory.simpleNumberSimilarityCalculator,
+  price: FieldTypeCalculatorFactory.numberDistanceSimilarityCalculator
 };
 
 const averageSimilarityCalculator = new AverageSimilarityCalculator(
   configuration
 );
 
-this.anObject = fs.readJSONSync("./data/anObject.json");
+this.anObject = fs.readJSONSync("./data/object2.json");
 
-this.anotherObject = fs.readJSONSync("./data/anotherObject.json");
-
-this.aMapOfObjects = fs.readJsonSync("./data/aMapOfObjects.json");
+this.input = fs.readJSONSync("./data/input2.json");
 
 //code for an object and a JSON list
 
 averageSimilarityCalculator
-  .getSimilarityMap(this.anObject, this.aMapOfObjects)
+  .getSimilarityMap(this.anObject, this.input)
   .then(result =>
     fs.writeFileSync("./data/output.json", JSON.stringify([...result]), "utf-8")
   )

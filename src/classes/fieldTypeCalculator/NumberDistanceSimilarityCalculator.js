@@ -1,6 +1,6 @@
 const SimpleObjectSimilarityCalculator = require("../SimpleObjectSimilarityCalculator");
 
-module.exports = class NumberSimilarityCalculator extends SimpleObjectSimilarityCalculator {
+module.exports = class NumberDistanceSimilarityCalculator extends SimpleObjectSimilarityCalculator {
   constructor() {
     super();
   }

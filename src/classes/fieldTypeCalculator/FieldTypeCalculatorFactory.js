@@ -1,6 +1,8 @@
 const DiceStringSimilarityCalculator = require("./DiceStringSimilarityCalculator");
-const NumberSimilarityCalculator = require("./NumberSimilarityCalculator");
+const NumberDistanceSimilarityCalculator = require("./NumberDistanceSimilarityCalculator");
+const SimpleNumberSimilarityCalculator = require("./SimpleNumberSimilarityCalculator");
 module.exports = {
   diceStringSimilarityCalculator: new DiceStringSimilarityCalculator(),
-  numberSimilarityCalculator: new NumberSimilarityCalculator()
+  numberDistanceSimilarityCalculator: new NumberDistanceSimilarityCalculator(),
+  simpleNumberSimilarityCalculator: new SimpleNumberSimilarityCalculator()
 };
