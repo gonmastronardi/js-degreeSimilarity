@@ -16,9 +16,9 @@ module.exports = class ObjectSimilarityCalculator {
   async getSimilarityMap(anObject, aMapOfObjects) {
     //a map to store the results
     this.result = new Map();
-    //put the entry object at the very top of the result.
+    //put the entry object at the very top of the result to return the original.
     this.result.set(anObject, 1);
-    console.log(anObject);
+
     for (var key in aMapOfObjects) {
       //it calls getSimilarity method with the original object and every other in the map
       let similarityValue = await this.getSimilarity(
@@ -26,7 +26,7 @@ module.exports = class ObjectSimilarityCalculator {
         aMapOfObjects[key]
       );
       //if the objects are +0.5 similars, save to return
-      if (similarityValue >= 0.5) {
+      if (similarityValue >= 0) {
         this.result.set(aMapOfObjects[key], similarityValue);
       }
     }

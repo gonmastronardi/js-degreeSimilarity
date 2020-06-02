@@ -13,25 +13,29 @@ const FieldTypeCalculatorFactory = require("./src/classes/fieldTypeCalculator/Fi
 var configuration = {
   name: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
   processor: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
-  // memory: FieldTypeCalculatorFactory.simpleNumberSimilarityCalculator,
+  memory: FieldTypeCalculatorFactory.simpleNumberSimilarityCalculator,
   camera: FieldTypeCalculatorFactory.simpleNumberSimilarityCalculator,
-  price: FieldTypeCalculatorFactory.numberDistanceSimilarityCalculator
+  price: FieldTypeCalculatorFactory.numberDistanceSimilarityCalculator,
+  battery: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
+  processor: FieldTypeCalculatorFactory.diceStringSimilarityCalculator,
+  screenSize: FieldTypeCalculatorFactory.simpleNumberSimilarityCalculator,
+  speedProcessor: FieldTypeCalculatorFactory.diceStringSimilarityCalculator
 };
 
 const averageSimilarityCalculator = new AverageSimilarityCalculator(
   configuration
 );
 
-this.anObject = fs.readJSONSync("./data/object2.json");
+this.anObject = fs.readJSONSync("./data/objectMay20Normalized.json");
 
-this.input = fs.readJSONSync("./data/input2.json");
+this.input = fs.readJSONSync("./data/inputMay20Normalized.json");
 
 //code for an object and a JSON list
 
 averageSimilarityCalculator
   .getSimilarityMap(this.anObject, this.input)
   .then(result =>
-    fs.writeFileSync("./data/output.json", JSON.stringify([...result]), "utf-8")
+    fs.writeFileSync("./data/outputMay20Normalized.json", JSON.stringify([...result]), "utf-8")
   )
   .catch(err => console.error(err));
 

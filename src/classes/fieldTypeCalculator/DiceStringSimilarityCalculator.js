@@ -10,8 +10,6 @@ module.exports = class DiceStringSimilarityCalculator extends SimpleObjectSimila
    * helped by an external library that uses Dice's coefficient.
    */
   async getSimilarity(aString, anotherString) {
-    // if (!(aString || anotherString)) return 0;
-    // return stringSimilarity.compareTwoStrings(aString, anotherString);
     if (((aString&&anotherString)!== undefined)){
       //do stuff if query is defined and not null
       return stringSimilarity.compareTwoStrings(aString, anotherString);
